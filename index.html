@@ -64,7 +64,19 @@
     </div>
   </nav>
 <div id="container">
-  <div id="map"></div>
+  <div id="swgm"></div>
+  <script>
+
+    var map = L.map('map', {
+      crs: L.CRS.Simple
+    });
+  
+    var bounds = [[0,0], [24,22]];
+    var image = L.imageOverlay('vendor/leaflet/dist/images/Star_Wars_Galaxy_Map_cropped.jpg', bounds).addTo(map);
+  
+    map.fitBounds(bounds);
+  
+  </script>
 </div>
 <!-- route info modal -->
 <div class="modal fade bd-example-modal-lg route-modal" id="route-Modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
