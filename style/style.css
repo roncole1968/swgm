@@ -1,0 +1,29 @@
+html, body, #container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+#map {
+  width: auto;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.leaflet-bottom {
+    bottom: 70px;
+}
+.leaflet-container {
+  /* background-color: rgba(221, 221, 221, 0.01); */
+  background: #2a2929;
+}
+
+/* bootstrap modals */
+.route-modal-dialog {
+  position:fixed;
+  top:auto;
+  right:10px;
+  left:auto;
+  bottom:10px;
+}
+.help-info-modal {
+  top: 30px;
+}
